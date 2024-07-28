@@ -1,0 +1,312 @@
+<!doctype html>
+<html lang="en"> 
+ <head> 
+  <meta charset="UTF-8"> 
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>Biodata</title> 
+  <link rel="stylesheet" href="style.css"> 
+ <style type="text/css" id="dcoder_stylesheet">body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: url('https://i.ibb.co.com/hHWLVxD/1917779143.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #fff;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+.header {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.container {
+  display: flex;
+}
+
+.letter {
+  font-size: 2em;
+  color: #00008B; /* Warna teks biru tua */
+  opacity: 0;
+  animation: glow 2s infinite;
+}
+
+.letter:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.letter:nth-child(2) {
+  animation-delay: 0.4s;
+}
+
+.letter:nth-child(3) {
+  animation-delay: 0.8s;
+}
+
+.letter:nth-child(4) {
+  animation-delay: 1.2s;
+}
+
+.letter:nth-child(5) {
+  animation-delay: 1.6s;
+}
+
+.letter:nth-child(6) {
+  animation-delay: 2s;
+}
+
+.letter:nth-child(7) {
+  animation-delay: 2.4s;
+}
+
+@keyframes glow {
+  0%, 100% {
+    opacity: 0;
+    text-shadow: none;
+  }
+  50% {
+    opacity: 1;
+    text-shadow: 0 0 20px #00BFFF, 0 0 30px #00BFFF, 0 0 40px #00BFFF, 0 0 50px #00BFFF; /* Bayangan teks biru muda */
+  }
+}
+
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 10%;
+}
+
+.logo {
+}
+  }
+  
+  @keyframes neon-animation {
+    100% {
+      color: blue;
+    }
+  
+  margin-right:5px;
+}
+
+.nav-links {
+  padding: 10px 30px;
+}
+
+.nav-links ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links ul li {
+  display: inline-block;
+  padding: 10px 25px;
+}
+
+.nav-links ul li a {
+  color: #000;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+}
+
+.left-sidebar {
+  width: 20%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.row {
+  padding: 10px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-top: -1%;
+}
+
+.left-col {
+  flex-basis: 40%;
+}
+
+.right-col {
+  flex-basis: 55%;
+  color: black;
+}
+
+.left-col img {
+  width: 100%;
+  cursor: pointer;
+  filter: grayscale(0);
+  transition: filter 1s;
+}
+
+.left-col img:hover {
+  filter: grayscale(1);
+}
+
+.right-col h1 {
+  font-size: 3em;
+  font-weight: 600;
+}
+
+.right-col p {
+  color: white ;
+  margin: 15px 0 70px;
+  font-size: 1.2em;
+}
+
+.social-media {
+  margin: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.social-media h4 {
+  margin-bottom: 10px;
+}
+
+.social-media ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.social-media li {
+  margin-bottom: 10px;
+}
+
+.social-media a {
+  text-decoration: none;
+  color: #0073e6;
+}
+
+.social-media a:hover {
+  text-decoration: underline;
+}
+
+.icon {
+  width: 100px;
+  height: 100px;
+  background: #555;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  border-radius: 6px;
+  overflow: hidden;
+  transition: transform 0.5s;
+}
+
+.icon i {
+  width: 28px;
+}
+
+.icon a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.icon a:hover {
+  opacity: 1;
+}
+
+.icon:hover {
+  transform: translateY(-5px);
+}
+
+/* Styles for smaller screens (mobile devices) */
+@media only screen and (max-width: 768px) {
+  .row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .left-col {
+    flex-basis: 100%;
+    margin-bottom: 20px;
+  }
+
+  .right-col {
+    flex-basis: 100%;
+    text-align: center;
+  }
+
+  .left-col img {
+    width: 100%;
+  }
+
+  .social-media {
+    flex-direction: column;
+  }
+
+  .icon {
+    margin-bottom: 10px;
+  }
+
+  .header {
+    min-height: auto;
+    padding: 20px 0;
+  }
+
+  .nav-links {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    
+    z-index: 100;
+  }
+
+  .nav-links ul {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .nav-links ul li {
+    padding: 10px;
+  }
+}</style></head> 
+ <body> 
+  <div class="header"> 
+   <div class="text-container"> 
+    <div class="container"> <span class="letter">S</span> <span class="letter">Y</span> <span class="letter">A</span> <span class="letter">H</span> <span class="letter">R</span> <span class="letter">U</span> <span class="letter">L</span> 
+     <div class="nav-links"> 
+      <ul> 
+      </ul> 
+     </div> 
+     <div class="left-sidebar"></div> 
+     <div class="row"> 
+      <div class="left-col"> 
+       <img src="https://i.ibb.co.com/DMjJPdZ/IMG-20240627-151638-740.webp" width="100%"> 
+      </div> 
+      <div class="right-col"> 
+       <h2>SMAN 1 NAGRAK </h2> 
+       <p>Saya Syahrul Sukabumi 29 2005,ibu saya bernama Fatimah pekerjaan ibu rumah tangga anak ke 2 dari 4 bersaudara hobi saya ngoding,editing video dan hacking cita-cita ingin menjadi Cyber scurity pelajaran yang disukai jika pelajaran di sekolah tidak ada saya lebih suka belajar sendiri anda bisa hubungi saya jika ada keperluan </p> 
+       <div class="social-media"> 
+        <h4>Hubungi </h4> 
+        <ul> 
+         <li><a href="https://wa.me/+6283149295359" target="_blank">WhatsApp</a></li> 
+         <li><a href="https://www.facebook.com/profile.php?id=100084915722321&amp;mibextid=ZbWKwL" target="_blank">Facebook</a></li> 
+         <li><a href="https://www.instagram.com/putra211221?igsh=bHdkb3p0eGJ2a2ll" target="_blank">Instagram</a></li> 
+         <li><a href="https://youtube.com/@syahrulsyiam9522?feature=shared" target="_blank">YouTube</a></li> 
+        </ul> 
+       </div> 
+      </div> 
+     </div> 
+    </div> 
+   </div>
+  </div>
+ 
+</body></html>
